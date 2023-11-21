@@ -2,7 +2,7 @@
 using Firefly.Box;
 namespace Northwind.Views
 {
-    public class ApplicationMdiMenu : MenuStripBase 
+    public class ApplicationMdiMenu : MenuStripBase
     {
         public ApplicationMdiMenu()
         {
@@ -92,13 +92,17 @@ namespace Northwind.Views
                     , new RaiseCommand("&About ", ENV.Commands.About)
                 }
                 #endregion
-                //, new MenuEntry("Test")
+                , new MenuEntry("Test")
                 #region items
-                //{
-                //new ManagedCommand("&Help", Command.Help) { Image = Properties.Resources.Help, ToolBarGroup = toolbarGroup3 }
-                //}
+                {
+                    new MenuEntry("Test", () =>
+                    {
+                        TestForm testForm = new TestForm(); testForm.Show();
+                    })
+                }
                 #endregion
             );
         }
+
     }
 }
