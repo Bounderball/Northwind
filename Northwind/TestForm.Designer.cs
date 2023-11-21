@@ -44,13 +44,10 @@
             this.reorderLevelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.discontinuedDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.productsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.productsDataSet = new Northwind.ProductsDataSet();
-            this.productsTableAdapter = new Northwind.ProductsDataSetTableAdapters.ProductsTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.northwindDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productsDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -148,20 +145,6 @@
             this.discontinuedDataGridViewCheckBoxColumn.HeaderText = "Discontinued";
             this.discontinuedDataGridViewCheckBoxColumn.Name = "discontinuedDataGridViewCheckBoxColumn";
             // 
-            // productsBindingSource
-            // 
-            this.productsBindingSource.DataMember = "Products";
-            this.productsBindingSource.DataSource = this.productsDataSet;
-            // 
-            // productsDataSet
-            // 
-            this.productsDataSet.DataSetName = "ProductsDataSet";
-            this.productsDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // productsTableAdapter
-            // 
-            this.productsTableAdapter.ClearBeforeFill = true;
-            // 
             // TestForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -175,15 +158,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.northwindDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productsDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private ProductsDataSet productsDataSet;
         private System.Windows.Forms.BindingSource productsBindingSource;
-        private ProductsDataSetTableAdapters.ProductsTableAdapter productsTableAdapter;
         private System.Windows.Forms.DataGridView dataGridView1;
         private NorthwindDataSet northwindDataSet;
         private System.Windows.Forms.BindingSource productsBindingSource1;
